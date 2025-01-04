@@ -6,11 +6,11 @@ import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 
 const navItems = [
-  { name: 'My Journey', href: '/journey' },
-  { name: 'My Projects', href: '/projects' },
-  { name: 'My Achievements', href: '/achievements' },
-  { name: 'My Adventures', href: '/adventures' },
-  { name: 'My Contact', href: '/contact' },
+  { name: 'Journey', href: '/journey' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'Achievements', href: '/achievements' },
+  { name: 'Adventures', href: '/adventures' },
+  { name: 'Contact', href: '/contact' },
 ]
 
 export default function Navbar() {
