@@ -8,6 +8,7 @@ import { motion } from 'framer-motion'
 
 interface TimelineItem {
   title: string
+  client: string
   date: string
   description: string
   skills: string[]
@@ -48,7 +49,7 @@ export default function Timeline({ items }: TimelineProps) {
                   <Badge key={skillIndex} variant="secondary">{skill}</Badge>
                 ))}
               </div>
-              <Link href={index === 0 ? "/experiences/rmb" : item.ctaLink}>
+              <Link href={`/journey/${item.client.toLowerCase().replace(/\s+/g, '-')}`}>
                 <Button variant="outline">Learn More</Button>
               </Link>
             </div>

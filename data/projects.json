@@ -1,0 +1,128 @@
+{
+  "categories": [
+    {
+      "id": "webApps",
+      "label": "Web Apps",
+      "projects": [
+        {
+          "title": "AngularJS Train Electricity Consumption Billing Platform",
+          "client": "Deutsche Bahn Energie",
+          "date": "2022",
+          "description": "The business department lacked visibility into electricity consumption, contracts, and billing for train owners, leading to costly billing inconsistencies. A user interface was developed to flag suspect consumption data, track billing status, and provide dashboards for predicted vs. actual energy use, enabling accurate, timely invoicing and better reporting for management.",
+          "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "link": "/projects/electricity-billing",
+          "technologies": ["TIBCO BPM", "AngularJS", "Oracle DB", "TypeScript", "REST API"],
+          "images": [
+            {
+              "imageUrl": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "description": "Dashboard overview showing real-time electricity consumption metrics and billing status for train operators."
+            },
+            {
+              "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "description": "Data analysis view displaying historical consumption patterns and cost predictions."
+            },
+            {
+              "imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "description": "Contract management interface for tracking agreements and billing cycles."
+            }
+          ],
+          "longDescription": [
+            "The Train Electricity Consumption Billing Platform was developed to address critical challenges in managing and billing electricity usage for train operators. The system provides comprehensive visibility into consumption patterns, contract details, and billing processes.",
+            "Key features include real-time monitoring of electricity usage, automated anomaly detection, and sophisticated reporting tools. The platform integrates with existing infrastructure to ensure accurate data collection and processing.",
+            "The implementation resulted in significant improvements in billing accuracy, reduced operational costs, and enhanced transparency for all stakeholders. The system continues to evolve with new features and optimizations based on user feedback and changing business requirements."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cloudInfrastructure",
+      "label": "Cloud Infrastructure",
+      "projects": [
+        {
+          "title": "Multi-Region AWS Infrastructure",
+          "client": "Ignite Solutions",
+          "date": "2023",
+          "description": "Designed and implemented a highly available multi-region AWS infrastructure using Infrastructure as Code.",
+          "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "link": "/projects/aws-infrastructure",
+          "technologies": ["AWS", "Terraform", "Docker", "Kubernetes", "GitHub Actions"],
+          "images": [
+            {
+              "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "description": "High-level architecture diagram showing multi-region setup"
+            },
+            {
+              "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "description": "Infrastructure monitoring dashboard"
+            }
+          ],
+          "longDescription": [
+            "Designed and implemented a robust multi-region AWS infrastructure to ensure high availability and disaster recovery capabilities.",
+            "Utilized Infrastructure as Code principles with Terraform to maintain consistency and enable rapid deployment across regions.",
+            "Implemented automated CI/CD pipelines using GitHub Actions for infrastructure updates and application deployments."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "microservices",
+      "label": "Microservices",
+      "projects": [
+        {
+          "title": "Event-Driven Microservices Platform",
+          "client": "Deutsche Bahn Netz",
+          "date": "2024",
+          "description": "Built a scalable event-driven microservices architecture for real-time train tracking and monitoring.",
+          "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "link": "/projects/event-platform",
+          "technologies": ["Java", "Spring Boot", "Kafka", "MongoDB", "Redis", "Docker"],
+          "images": [
+            {
+              "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "description": "System architecture overview"
+            },
+            {
+              "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "description": "Real-time monitoring dashboard"
+            }
+          ],
+          "longDescription": [
+            "Developed a sophisticated event-driven microservices platform for real-time train tracking and monitoring.",
+            "Implemented event sourcing patterns using Kafka for reliable message delivery and processing.",
+            "Built scalable services using Spring Boot with MongoDB for flexible data storage and Redis for caching."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "integration",
+      "label": "Integration Solutions",
+      "projects": [
+        {
+          "title": "Enterprise Integration Platform",
+          "client": "Dr Schnell",
+          "date": "2024",
+          "description": "Developed a comprehensive integration platform using Mulesoft to connect various enterprise systems.",
+          "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "link": "/projects/integration-platform",
+          "technologies": ["Mulesoft", "API Gateway", "OAuth2", "PostgreSQL", "Elasticsearch"],
+          "images": [
+            {
+              "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "description": "Integration architecture diagram"
+            },
+            {
+              "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "description": "API management dashboard"
+            }
+          ],
+          "longDescription": [
+            "Created a centralized integration platform to connect various enterprise systems and streamline data flow.",
+            "Implemented API-led connectivity approach with reusable assets and clear governance model.",
+            "Built comprehensive monitoring and alerting system for all integration flows."
+          ]
+        }
+      ]
+    }
+  ]
+}

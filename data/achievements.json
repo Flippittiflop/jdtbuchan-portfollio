@@ -1,0 +1,40 @@
+{
+  "achievements": [
+    {
+      "title": "AWS Solutions Architect Professional",
+      "date": "2023",
+      "description": "Achieved AWS Solutions Architect Professional certification, demonstrating expert-level knowledge in designing distributed systems and AWS architecture.",
+      "category": "Certification"
+    },
+    {
+      "title": "Salesforce JavaScript Developer",
+      "date": "2023",
+      "description": "Obtained Salesforce JavaScript Developer certification, validating expertise in building custom applications using JavaScript in the Salesforce ecosystem.",
+      "category": "Certification"
+    },
+    {
+      "title": "Hackathon Winner",
+      "date": "2022",
+      "description": "Led a team to victory in a 48-hour hackathon, developing an innovative solution for sustainable urban transportation.",
+      "category": "Competition"
+    },
+    {
+      "title": "AWS Solutions Architect Associate",
+      "date": "2020",
+      "description": "Earned AWS Solutions Architect Associate certification, demonstrating proficiency in designing available, cost-efficient, and scalable AWS applications.",
+      "category": "Certification"
+    },
+    {
+      "title": "AWS Cloud Practitioner",
+      "date": "2020",
+      "description": "Obtained AWS Cloud Practitioner certification, validating comprehensive understanding of AWS Cloud concepts, services, and terminology.",
+      "category": "Certification"
+    },
+    {
+      "title": "Salesforce Administrator",
+      "date": "2020",
+      "description": "Achieved Salesforce Administrator certification, proving expertise in managing and customizing Salesforce applications.",
+      "category": "Certification"
+    }
+  ]
+}

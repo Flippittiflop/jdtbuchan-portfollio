@@ -1,0 +1,52 @@
+{
+  "timelineData": [
+    {
+      "title": "Integration Architect at Dr Schnell",
+      "client": "Dr Schnell",
+      "date": "Oct 2024 - Present",
+      "description": "Mulesoft Integration, Architect, Developer and Devops Manager",
+      "skills": ["Mulesoft", "System Architecture", "DevOps", "CI/CD", "Cloud Architecture", "Team Leadership"],
+      "ctaLink": "/journey/dr-schnell"
+    },
+    {
+      "title": "Consultant at Ignite Solutions",
+      "client": "Ignite Solutions",
+      "date": "Feb 2017 - Mar 2025",
+      "description": "Consultant, Cloud Developer and Architect",
+      "skills": ["Cloud Computing", "AWS", "Azure", "System Design", "Solution Architecture", "Consulting"],
+      "ctaLink": "/journey/ignite-solutions"
+    },
+    {
+      "title": "Developer at Deutsche Bahn Netz",
+      "client": "Deutsche Bahn Netz",
+      "date": "Jan 2024 - Oct 2024",
+      "description": "Java Developer and Devops",
+      "skills": ["Java", "Spring Boot", "DevOps", "Docker", "Kubernetes", "CI/CD"],
+      "ctaLink": "/journey/db-netz"
+    },
+    {
+      "title": "Architect at Deutsche Bahn Energie",
+      "client": "Deutsche Bahn Energie",
+      "date": "April 2019 - Dec 2023",
+      "description": "Tibco BPM Architect and Frontend Web App Developer",
+      "skills": ["Tibco BPM", "Frontend Development", "React", "JavaScript", "Process Automation", "UX Design"],
+      "ctaLink": "/journey/db-energie"
+    },
+    {
+      "title": "BPM Developer at Rand Merchant Bank",
+      "client": "Rand Merchant Bank",
+      "date": "Feb 2017 - Mar 2019",
+      "description": "BPM Analyst, Developer, Tester",
+      "skills": ["BPM", "Business Analysis", "Software Testing", "Process Modeling", "Quality Assurance"],
+      "ctaLink": "/journey/rmb"
+    },
+    {
+      "title": "Student at University of Pretoria",
+      "client": "University of Pretoria",
+      "date": "Feb 2017",
+      "description": "BCom Informatics and Statistics Degree",
+      "skills": ["Informatics", "Statistics", "Data Analysis", "Programming Fundamentals", "Research Methods"],
+      "ctaLink": "/journey/university"
+    }
+  ]
+}
