@@ -5,6 +5,10 @@ import { Badge } from "@/components/ui/badge"
 import projectsData from '@/data/projects.json'
 
 export default function Projects() {
+    const isExternal = (url: string) => {
+        return url.startsWith("http://") || url.startsWith("https://");
+    };
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 className="text-3xl font-bold mb-6">My Projects</h1>
@@ -52,9 +56,13 @@ export default function Projects() {
                       </Badge>
                     ))}
                   </div>
-                  <Link href={project.link}>
-                    <Button variant="outline" className="w-full">Learn More</Button>
-                  </Link>
+                    <Link
+                        href={project.link}
+                        target={isExternal(project.link) ? "_blank" : undefined}
+                        rel={isExternal(project.link) ? "noopener noreferrer" : undefined}
+                    >
+                        <Button variant="outline" className="w-full">Learn More</Button>
+                    </Link>
                 </div>
               </div>
             ))}

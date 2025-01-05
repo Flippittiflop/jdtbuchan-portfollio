@@ -12,7 +12,6 @@ export default function Home() {
   useEffect(() => {
     const video = videoRef.current
     if (video) {
-      video.currentTime = Math.random() * 5
       video.pause()
     }
   }, [])
@@ -23,13 +22,13 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center min-h-screen py-2">
         <div className="text-center">
           <div
-            className="relative w-64 h-64 mx-auto mb-8 rounded-full overflow-hidden"
+            className="relative w-80 h-80 mx-auto mb-8 rounded-full overflow-hidden"
             onMouseEnter={() => videoRef.current?.play()}
             onMouseLeave={() => videoRef.current?.pause()}
           >
             <video
               ref={videoRef}
-              src="/profile/profile.mp4"
+              src="/profile/profile_movie.mp4"
               muted
               loop
               playsInline

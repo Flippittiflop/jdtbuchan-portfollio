@@ -1,10 +1,10 @@
 {
   "adventures": [
     {
-      "title": "Attending My First Hackathon",
-      "date": "June 15, 2022",
-      "description": "I participated in my first 24-hour hackathon, building a project that aimed to solve local community issues. The experience was intense, challenging, and incredibly rewarding.",
-      "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "title": "Bungee Jumping in South Africa",
+      "date": "June 15, 2021",
+      "description": "I took the plunge and went bungee jumping off the world's highest commercial bridge bungee. The rush of free-falling and rebounding back up was an unforgettable experience.",
+      "image": "",
       "link": "/adventures/first-hackathon"
     },
     {

@@ -9,17 +9,13 @@
           "client": "Dr Schnell",
           "date": "2024",
           "description": "Developed a comprehensive integration platform using Mulesoft to connect various enterprise systems.",
-          "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "image": "/projects/mule-integration/mule_API_Integration.png",
           "link": "/projects/integration-platform",
-          "technologies": ["Mulesoft", "API Gateway", "OAuth2", "PostgreSQL", "Elasticsearch"],
+          "technologies": ["Mulesoft", "Anypoint Platform", "RAML API"],
           "images": [
             {
-              "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "imageUrl": "/projects/mule-integration/mule_API_Integration.png",
               "description": "Integration architecture diagram"
-            },
-            {
-              "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-              "description": "API management dashboard"
             }
           ],
           "longDescription": [
@@ -33,7 +29,7 @@
           "client": "Deutsche Bahn Netz",
           "date": "2024",
           "description": "A downstream system required daily exports of train usage data for analysis and enrichment, ensuring alignment with train contracts and energy consumption thresholds. A configurable service was developed to retrieve, verify, enrich, and export data based on user-defined timeframes, improving data accuracy and accessibility for further processing.",
-          "image": "https://images.unsplash.com/photo-1521791093227-9e24c896007a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "image": "/projects/java-train-db-netz/java_train_data.png",
           "link": "/projects/train-electricity-analysis",
           "technologies": [
             "Java",
@@ -46,12 +42,8 @@
           ],
           "images": [
             {
-              "imageUrl": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "imageUrl": "/projects/java-train-db-netz/java_train_data.png",
               "description": "Data visualization of train electricity consumption and contract compliance."
-            },
-            {
-              "imageUrl": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-              "description": "Automated data export for contract and energy threshold alignment."
             }
           ],
           "longDescription": [
@@ -66,7 +58,7 @@
           "client": "Ignite Solutions",
           "date": "2023",
           "description": "A document unlocking API service was implemented to automate password retrieval and decryption of banking partner documents, eliminating the manual process of locating keys before OCR analysis. The solution operated within a private VPC, required no server management, and significantly reduced infrastructure costs by up to 99%, streamlining document processing for downstream systems.",
-          "image": "https://images.unsplash.com/photo-1595071775043-8920e34499a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "image": "/projects/document-unlocking/document_unlocking_service.png",
           "link": "/projects/aws-document-unlocking",
           "technologies": [
             "Lambda",
@@ -79,12 +71,8 @@
           ],
           "images": [
             {
-              "imageUrl": "https://images.unsplash.com/photo-1599491106182-18bd1691f486?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "imageUrl": "/projects/document-unlocking/document_unlocking_service.png",
               "description": "Automated document unlocking and decryption service interface."
-            },
-            {
-              "imageUrl": "https://images.unsplash.com/photo-1610484826967-0e30eabacc7c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-              "description": "AWS Lambda function executing document decryption."
             }
           ],
           "longDescription": [
@@ -99,7 +87,7 @@
           "client": "Deutsche Bahn Energie",
           "date": "2021",
           "description": "A new integration platform was developed to ensure accurate and consistent invoicing, reducing fines and operational costs for the energy supplier. The platform featured self-correcting error handling and human intervention workflows to flag discrepancies between predicted and actual energy consumption, enabling invoice corrections before sending. As a result, invoicing accuracy tripled, improving financial and operational efficiency.",
-          "image": "https://images.unsplash.com/photo-1571687949922-2b7059d2ce3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "image": "/projects/db-energie-train/db_energy_train.png",
           "link": "/projects/train-electricity-invoicing",
           "technologies": [
             "TIBCO BW",
@@ -112,12 +100,8 @@
           ],
           "images": [
             {
-              "imageUrl": "https://images.unsplash.com/photo-1599508708996-03a12f5ef2e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "imageUrl": "/projects/db-energie-train/db_energy_train.png",
               "description": "Invoice correction dashboard comparing predicted vs. actual energy use."
-            },
-            {
-              "imageUrl": "https://images.unsplash.com/photo-1624293874030-fd00cb7a7d4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-              "description": "Automated energy invoicing system workflow."
             }
           ],
           "longDescription": [
@@ -132,7 +116,7 @@
           "client": "Deutsche Bahn Energie",
           "date": "2020",
           "description": "A centralized health check system was implemented to automate daily system monitoring, replacing manual checks and saving operational time. Health check endpoints were added to all integration systems, allowing an API to verify database and third-party system availability. The aggregated system health was reported via Email and Microsoft Teams, enabling the team to proactively address issues and ensure system uptime.",
-          "image": "https://images.unsplash.com/photo-1528458909337-9e1db5110c37?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "image": "/projects/system-health-check/system-health-check.png",
           "link": "/projects/system-health-check",
           "technologies": [
             "Bash Scripting",
@@ -144,12 +128,8 @@
           ],
           "images": [
             {
-              "imageUrl": "https://images.unsplash.com/photo-1603126859726-c5e3d0b0dbf6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "imageUrl": "/projects/system-health-check/system-health-check.png",
               "description": "System health dashboard showing integration system uptime."
-            },
-            {
-              "imageUrl": "https://images.unsplash.com/photo-1557259651-f27b943e5224?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-              "description": "Automated email notifications for system health checks."
             }
           ],
           "longDescription": [
@@ -169,7 +149,7 @@
           "title": "Github Actions CI/CD Mulesoft Pipeline",
           "date": "2024",
           "description": "A CI/CD pipeline using GitHub Actions standardized packaging and deployment of Mulesoft applications, enforced separation of duties for controlled releases, and introduced a parent POM for consistent dependency management.",
-          "image": "https://images.unsplash.com/photo-1556767576-35d2893c9a9f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "image": "/projects/mule-cicd/standard_packaging.png",
           "link": "/projects/github-actions-mulesoft",
           "technologies": [
             "Mulesoft",
@@ -180,12 +160,8 @@
           ],
           "images": [
             {
-              "imageUrl": "https://images.unsplash.com/photo-1556766764-51efcb412b9b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "imageUrl": "/projects/mule-cicd/standard_packaging.png",
               "description": "CI/CD pipeline execution for Mulesoft deployment."
-            },
-            {
-              "imageUrl": "https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-              "description": "Automated dependency management using Parent POM."
             }
           ],
           "longDescription": [
@@ -200,7 +176,7 @@
           "client": "Deutsche Bahn Netz",
           "date": "2023",
           "description": "An outdated and costly Jenkins setup was replaced with a GitLab Runner-based CI/CD pipeline running on a Dockerized EC2 instance, automating Java builds, tests, packaging, and deployments to a JBoss server.",
-          "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "image": "/projects/gitlab-runner-java/java_gitlab_runner.png",
           "link": "/projects/gitlab-java-pipeline",
           "technologies": [
             "Java",
@@ -213,12 +189,8 @@
           ],
           "images": [
             {
-              "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "imageUrl": "/projects/gitlab-runner-java/java_gitlab_runner.png",
               "description": "GitLab Runner pipeline handling Java build, test, and deployment."
-            },
-            {
-              "imageUrl": "https://images.unsplash.com/photo-1593113598332-4debcfdee562?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-              "description": "Automated artifact upload process replacing Jenkins' manual workflows."
             }
           ],
           "longDescription": [
@@ -233,7 +205,7 @@
           "client": "Deutsche Bahn Netz",
           "date": "2023",
           "description": "A GitLab CI/CD pipeline was introduced to automate regression testing for integration and test environments, replacing manual tester-triggered tests that led to errors in production.",
-          "image": "https://images.unsplash.com/photo-1565373963433-53bcea4876e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "image": "/projects/gitlab-runner-test/gitlab-runner-testing.png",
           "link": "/projects/gitlab-nightly-tests",
           "technologies": [
             "SOAPUI",
@@ -244,12 +216,8 @@
           ],
           "images": [
             {
-              "imageUrl": "https://images.unsplash.com/photo-1586880244395-c9deb2442440?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "imageUrl": "/projects/gitlab-runner-test/gitlab-runner-testing.png",
               "description": "Automated nightly tests executed in a Dockerized GitLab CI/CD pipeline."
-            },
-            {
-              "imageUrl": "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-              "description": "Email notifications for test failures sent to the development team."
             }
           ],
           "longDescription": [
@@ -270,7 +238,7 @@
           "client": "Ignite Solutions",
           "date": "2023",
           "description": "An integration platform in a private investment bank gained better control over packaging, deployment, and property management for over 150 microservices, reducing production issues caused by incorrect versions, passwords, and manual errors. A new interface and backend enabled technical and business users to track deployed components, manage properties, store artifacts, and oversee release management, improving operational efficiency and governance.",
-          "image": "https://images.unsplash.com/photo-1521790797524-b2497295b8e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "image": "/projects/release-management/release_management.png",
           "link": "/projects/release-management",
           "technologies": [
             "Angular",
@@ -289,12 +257,8 @@
           ],
           "images": [
             {
-              "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "imageUrl": "/projects/release-management/release_management.png",
               "description": "Dashboard for managing microservices release versions and properties."
-            },
-            {
-              "imageUrl": "https://images.unsplash.com/photo-1565373963433-53bcea4876e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-              "description": "UI for tracking deployed components and managing configurations."
             }
           ],
           "longDescription": [
@@ -309,7 +273,7 @@
           "client": "Deutsche Bahn Energie",
           "date": "2022",
           "description": "The business department lacked visibility into electricity consumption, contracts, and billing for train owners, leading to costly billing inconsistencies. A user interface was developed to flag suspect consumption data, track billing status, and provide dashboards for predicted vs. actual energy use, enabling accurate, timely invoicing and better reporting for management.",
-          "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "image": "/projects/db-electricity-consumption/electricity_consumption_platform.png",
           "link": "/projects/electricity-billing",
           "technologies": [
             "TIBCO BPM",
@@ -318,12 +282,8 @@
           ],
           "images": [
             {
-              "imageUrl": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "imageUrl": "/projects/db-electricity-consumption/electricity_consumption_platform.png",
               "description": "Dashboard showing real-time electricity consumption and billing status."
-            },
-            {
-              "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-              "description": "Data analysis view displaying historical consumption patterns."
             }
           ],
           "longDescription": [
@@ -338,7 +298,7 @@
           "client": "Rand Merchant Bank",
           "date": "2017 - 2019",
           "description": "Improved banking system interoperability and performance by designing and implementing end-to-end solutions across multiple investment banking departments, requiring deep integration and domain knowledge. Delivered custom applications incorporating 4-eye review, approval workflows, SLAs, and user segregation, adapting each project to its specific business and technical requirements, while ensuring seamless integration with existing IT infrastructure.",
-          "image": "https://images.unsplash.com/photo-1580910365203-41d02c6b3af7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "image": "/projects/private-banking-bpm/private_banking_bpm.png",
           "link": "/projects/banking-automation",
           "technologies": [
             "TIBCO BPM",
@@ -353,12 +313,8 @@
           ],
           "images": [
             {
-              "imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+              "imageUrl": "/projects/private-banking-bpm/private_banking_bpm.png",
               "description": "User interface for workflow approvals and investment banking automation."
-            },
-            {
-              "imageUrl": "https://images.unsplash.com/photo-1521790797524-b2497295b8e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-              "description": "Custom dashboard integrating financial data from multiple sources."
             }
           ],
           "longDescription": [
@@ -380,8 +336,8 @@
           "client": "Little Sparrows",
           "date": "2024",
           "description": "A new nursery school website was built and deployed, featuring a gallery, contact page, class details, and events. The site is live, fully responsive, and includes CI/CD capabilities, ensuring seamless updates and maintenance.",
-          "image": "https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-          "link": "/projects/nursery-school-website",
+          "image": "/projects/little-sparrows/little_sparrow_logo.png",
+          "link": "https://littlesparrows.co.za/",
           "technologies": [
             "Route53",
             "Cloudfront",
@@ -390,14 +346,6 @@
             "GitHub"
           ],
           "images": [
-            {
-              "imageUrl": "https://images.unsplash.com/photo-1599427302935-638237b64a6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-              "description": "Homepage of the nursery school website with a welcoming design."
-            },
-            {
-              "imageUrl": "https://images.unsplash.com/photo-1603205867403-ec6c8c88f301?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-              "description": "Gallery section displaying nursery activities and class environments."
-            }
           ],
           "longDescription": [
             "The website was built to provide parents with up-to-date information about the nursery school, including class details and events.",
@@ -411,8 +359,8 @@
           "client": "Hazel Buchan",
           "date": "2024",
           "description": "A South African artist’s website was updated to be maintainable, responsive, and functional, featuring a contact page and an enquiry page for selling paper flowers. The site is live, optimized for easy updates, and includes CI/CD capabilities for seamless maintenance.",
-          "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-          "link": "/projects/artist-portfolio",
+          "image": "/projects/hazel-buchan/HB_logo.png",
+          "link": "https://hazelbuchan.co.za/",
           "technologies": [
             "Route53",
             "Cloudfront",
@@ -421,14 +369,6 @@
             "GitHub"
           ],
           "images": [
-            {
-              "imageUrl": "https://images.unsplash.com/photo-1547595620-f1bd2024b1e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-              "description": "Homepage of the artist's portfolio showcasing featured artwork."
-            },
-            {
-              "imageUrl": "https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-              "description": "Enquiry page for purchasing handmade paper flowers."
-            }
           ],
           "longDescription": [
             "The portfolio website was designed to showcase the artist’s work in an engaging and interactive way.",
@@ -442,8 +382,8 @@
           "client": "Ignite Solutions",
           "date": "2021",
           "description": "A consulting company’s website was designed and deployed, featuring sections for services, contact information, and a theme aligned with their hexagon logo. The site is live, fully responsive, and includes CI/CD capabilities for seamless updates and maintenance.",
-          "image": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-          "link": "/projects/consulting-company-website",
+          "image": "/projects/ignite-solutions/is_logo.png",
+          "link": "https://ignitesolutions.eu/",
           "technologies": [
             "Route53",
             "Cloudfront",
@@ -452,14 +392,6 @@
             "GitHub"
           ],
           "images": [
-            {
-              "imageUrl": "https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-              "description": "Homepage displaying consulting services and company branding."
-            },
-            {
-              "imageUrl": "https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-              "description": "Contact page with company details and enquiry form."
-            }
           ],
           "longDescription": [
             "The consulting firm’s website was created to provide an online presence and showcase their services.",

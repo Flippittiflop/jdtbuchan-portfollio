@@ -9,7 +9,7 @@ const navItems = [
   { name: 'Journey', href: '/journey' },
   { name: 'Projects', href: '/projects' },
   { name: 'Achievements', href: '/achievements' },
-  { name: 'Adventures', href: '/adventures' },
+  // { name: 'Adventures', href: '/adventures' },
   { name: 'Contact', href: '/contact' },
 ]
 
