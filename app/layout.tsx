@@ -8,7 +8,7 @@ import Breadcrumb from '@/components/Breadcrumb'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'My Developer Portfolio',
+  title: 'JDTBuchan Portfolio',
   description: 'Showcasing my journey, projects, and adventures in software development',
 }
 

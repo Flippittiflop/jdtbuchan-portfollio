@@ -37,9 +37,9 @@ export default function Home() {
             />
           </div>
 
-          <h1 className="text-4xl font-bold mb-4">Welcome to My Developer Portfolio</h1>
+          <h1 className="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Explore my journey, projects, and adventures in the world of software development.
+            Explore my journey, projects, and adventures in the world of development.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <Link href="/journey" className="w-full sm:w-auto">
