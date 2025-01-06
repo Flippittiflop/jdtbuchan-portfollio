@@ -1,3 +1,5 @@
+export const dynamic = 'force-static'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
@@ -5,9 +7,9 @@ import { Badge } from "@/components/ui/badge"
 import projectsData from '@/data/projects.json'
 
 export default function Projects() {
-    const isExternal = (url: string) => {
-        return url.startsWith("http://") || url.startsWith("https://");
-    };
+  const isExternal = (url: string) => {
+    return url.startsWith("http://") || url.startsWith("https://");
+  };
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,13 +58,20 @@ export default function Projects() {
                       </Badge>
                     ))}
                   </div>
-                    <Link
-                        href={project.link}
-                        target={isExternal(project.link) ? "_blank" : undefined}
-                        rel={isExternal(project.link) ? "noopener noreferrer" : undefined}
+                  {isExternal(project.link) ? (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full"
                     >
-                        <Button variant="outline" className="w-full">Learn More</Button>
+                      <Button variant="outline" className="w-full">View Project</Button>
+                    </a>
+                  ) : (
+                    <Link href={project.link}>
+                      <Button variant="outline" className="w-full">Learn More</Button>
                     </Link>
+                  )}
                 </div>
               </div>
             ))}

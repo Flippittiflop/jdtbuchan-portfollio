@@ -1,3 +1,5 @@
+export const dynamic = 'force-static'
+
 import { notFound } from 'next/navigation'
 import { ProjectHeader } from '@/components/project/ProjectHeader'
 import { ProjectGallery } from '@/components/project/ProjectGallery'
@@ -10,14 +12,14 @@ export function generateStaticParams() {
     category.projects.map(project => ({
       project: project.link.split('/').pop(),
     }))
-  )
+  ).filter(param => param.project !== undefined && !param.project.includes('http'))
 }
 
 export default function ProjectPage({ params }: { params: { project: string } }) {
   // Find the project across all categories
   const project = projectsData.categories.flatMap(category => 
     category.projects
-  ).find(p => p.link.endsWith(params.project))
+  ).find(p => p.link.split('/').pop() === params.project)
 
   if (!project) {
     notFound()

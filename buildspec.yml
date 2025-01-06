@@ -12,7 +12,7 @@ phases:
     commands:
       - echo "Running type checks..."
       - npx tsc --noEmit
-      
+
   build:
     commands:
       - echo "Building the application..."

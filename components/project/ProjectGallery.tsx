@@ -44,7 +44,7 @@ export function ProjectGallery({ images }: ProjectGalleryProps) {
   const handlers = useSwipeable({
     onSwipedLeft: nextImage,
     onSwipedRight: previousImage,
-    preventDefaultTouchmoveEvent: true,
+    preventScrollOnSwipe: true,
     trackMouse: true
   })
 
