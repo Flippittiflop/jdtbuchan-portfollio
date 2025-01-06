@@ -28,7 +28,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
-              <span className="text-white text-2xl font-bold">JDTBuchan</span>
+              <span className="text-white text-2xl font-bold">Jonathan Buchan</span>
             </Link>
           </div>
           <div className="hidden md:block">

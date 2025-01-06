@@ -19,16 +19,15 @@
             }
           ],
           "longDescription": [
-            "Created a centralized integration platform to connect various enterprise systems and streamline data flow.",
-            "Implemented API-led connectivity approach with reusable assets and clear governance model.",
-            "Built comprehensive monitoring and alerting system for all integration flows."
+            "Created a centralized integration platform to connect various enterprise systems such as Salesforce, Microsoft Business Central and a PHP webshop among others.",
+            "Implemented API-led connectivity approach with reusable assets such as parent poms and API RAML fragments"
           ]
         },
         {
           "title": "Java Train Electricity Usage and Contract Analysis",
           "client": "Deutsche Bahn Netz",
           "date": "2024",
-          "description": "A downstream system required daily exports of train usage data for analysis and enrichment, ensuring alignment with train contracts and energy consumption thresholds. A configurable service was developed to retrieve, verify, enrich, and export data based on user-defined timeframes, improving data accuracy and accessibility for further processing.",
+          "description": "Developed a Java-based system to analyze train electricity consumption and contract compliance.",
           "image": "/projects/java-train-db-netz/java_train_data.png",
           "link": "/projects/train-electricity-analysis",
           "technologies": [
@@ -57,7 +56,7 @@
           "title": "AWS Cloud Customer Document Unlocking Service",
           "client": "Ignite Solutions",
           "date": "2023",
-          "description": "A document unlocking API service was implemented to automate password retrieval and decryption of banking partner documents, eliminating the manual process of locating keys before OCR analysis. The solution operated within a private VPC, required no server management, and significantly reduced infrastructure costs by up to 99%, streamlining document processing for downstream systems.",
+          "description": "Developed an automated document unlocking and decryption service using AWS Lambda and SSM.",
           "image": "/projects/document-unlocking/document_unlocking_service.png",
           "link": "/projects/aws-document-unlocking",
           "technologies": [
@@ -86,7 +85,7 @@
           "title": "Tibco BW Train Electricity Invoicing Integration Platform",
           "client": "Deutsche Bahn Energie",
           "date": "2021",
-          "description": "A new integration platform was developed to ensure accurate and consistent invoicing, reducing fines and operational costs for the energy supplier. The platform featured self-correcting error handling and human intervention workflows to flag discrepancies between predicted and actual energy consumption, enabling invoice corrections before sending. As a result, invoicing accuracy tripled, improving financial and operational efficiency.",
+          "description": "Developed an integration platform to automate train electricity invoicing and reconciliation.",
           "image": "/projects/db-energie-train/db_energy_train.png",
           "link": "/projects/train-electricity-invoicing",
           "technologies": [
@@ -115,7 +114,7 @@
           "title": "System Health Check Platform",
           "client": "Deutsche Bahn Energie",
           "date": "2020",
-          "description": "A centralized health check system was implemented to automate daily system monitoring, replacing manual checks and saving operational time. Health check endpoints were added to all integration systems, allowing an API to verify database and third-party system availability. The aggregated system health was reported via Email and Microsoft Teams, enabling the team to proactively address issues and ensure system uptime.",
+          "description": "Developed a system health check platform to monitor the uptime and availability of critical systems.",
           "image": "/projects/system-health-check/system-health-check.png",
           "link": "/projects/system-health-check",
           "technologies": [
@@ -148,7 +147,7 @@
         {
           "title": "Github Actions CI/CD Mulesoft Pipeline",
           "date": "2024",
-          "description": "A CI/CD pipeline using GitHub Actions standardized packaging and deployment of Mulesoft applications, enforced separation of duties for controlled releases, and introduced a parent POM for consistent dependency management.",
+          "description": "Implemented a CI/CD pipeline for Mulesoft applications using GitHub Actions, ensuring consistent deployments and governance.",
           "image": "/projects/mule-cicd/standard_packaging.png",
           "link": "/projects/github-actions-mulesoft",
           "technologies": [
@@ -175,7 +174,7 @@
           "title": "GitLab Runner CI/CD JAVA Pipeline",
           "client": "Deutsche Bahn Netz",
           "date": "2023",
-          "description": "An outdated and costly Jenkins setup was replaced with a GitLab Runner-based CI/CD pipeline running on a Dockerized EC2 instance, automating Java builds, tests, packaging, and deployments to a JBoss server.",
+          "description": "Implemented a GitLab Runner pipeline for Java applications, automating build, test, and deployment processes.",
           "image": "/projects/gitlab-runner-java/java_gitlab_runner.png",
           "link": "/projects/gitlab-java-pipeline",
           "technologies": [
@@ -185,6 +184,7 @@
             "GitLab Runner",
             "Docker",
             "Bash Scripting",
+            "Debian",
             "EC2"
           ],
           "images": [
@@ -204,7 +204,7 @@
           "title": "GitLab Runner CI/CD Scheduled Nightly Integration Tests",
           "client": "Deutsche Bahn Netz",
           "date": "2023",
-          "description": "A GitLab CI/CD pipeline was introduced to automate regression testing for integration and test environments, replacing manual tester-triggered tests that led to errors in production.",
+          "description": "Implemented scheduled nightly integration tests using GitLab Runner, Docker, and SOAPUI.",
           "image": "/projects/gitlab-runner-test/gitlab-runner-testing.png",
           "link": "/projects/gitlab-nightly-tests",
           "technologies": [
@@ -237,7 +237,7 @@
           "title": "Angular Release Management Platform",
           "client": "Ignite Solutions",
           "date": "2023",
-          "description": "An integration platform in a private investment bank gained better control over packaging, deployment, and property management for over 150 microservices, reducing production issues caused by incorrect versions, passwords, and manual errors. A new interface and backend enabled technical and business users to track deployed components, manage properties, store artifacts, and oversee release management, improving operational efficiency and governance.",
+          "description": "Developed a release management platform using Angular and AWS services to manage microservices deployment.",
           "image": "/projects/release-management/release_management.png",
           "link": "/projects/release-management",
           "technologies": [
@@ -272,7 +272,7 @@
           "title": "AngularJS Train Electricity Consumption Billing Platform",
           "client": "Deutsche Bahn Energie",
           "date": "2022",
-          "description": "The business department lacked visibility into electricity consumption, contracts, and billing for train owners, leading to costly billing inconsistencies. A user interface was developed to flag suspect consumption data, track billing status, and provide dashboards for predicted vs. actual energy use, enabling accurate, timely invoicing and better reporting for management.",
+          "description": "Developed a billing platform using AngularJS to manage train electricity consumption and billing.",
           "image": "/projects/db-electricity-consumption/electricity_consumption_platform.png",
           "link": "/projects/electricity-billing",
           "technologies": [
@@ -297,7 +297,7 @@
           "title": "Tibco BPM Private Investment Banking Automation",
           "client": "Rand Merchant Bank",
           "date": "2017 - 2019",
-          "description": "Improved banking system interoperability and performance by designing and implementing end-to-end solutions across multiple investment banking departments, requiring deep integration and domain knowledge. Delivered custom applications incorporating 4-eye review, approval workflows, SLAs, and user segregation, adapting each project to its specific business and technical requirements, while ensuring seamless integration with existing IT infrastructure.",
+          "description": "Developed a private banking automation system using TIBCO BPM to streamline investment processes.",
           "image": "/projects/private-banking-bpm/private_banking_bpm.png",
           "link": "/projects/banking-automation",
           "technologies": [
@@ -335,7 +335,7 @@
           "title": "Nursery School Website",
           "client": "Little Sparrows",
           "date": "2024",
-          "description": "A new nursery school website was built and deployed, featuring a gallery, contact page, class details, and events. The site is live, fully responsive, and includes CI/CD capabilities, ensuring seamless updates and maintenance.",
+          "description": "Designed and deployed a nursery school website using AWS services for fast content delivery and seamless updates.",
           "image": "/projects/little-sparrows/little_sparrow_logo.png",
           "link": "https://littlesparrows.co.za/",
           "technologies": [
@@ -358,7 +358,7 @@
           "title": "Artist Portfolio Website",
           "client": "Hazel Buchan",
           "date": "2024",
-          "description": "A South African artist’s website was updated to be maintainable, responsive, and functional, featuring a contact page and an enquiry page for selling paper flowers. The site is live, optimized for easy updates, and includes CI/CD capabilities for seamless maintenance.",
+          "description": "Designed and deployed an artist portfolio website to showcase handmade paper flowers and engage potential customers.",
           "image": "/projects/hazel-buchan/HB_logo.png",
           "link": "https://hazelbuchan.co.za/",
           "technologies": [
@@ -381,7 +381,7 @@
           "title": "Consulting Company Website",
           "client": "Ignite Solutions",
           "date": "2021",
-          "description": "A consulting company’s website was designed and deployed, featuring sections for services, contact information, and a theme aligned with their hexagon logo. The site is live, fully responsive, and includes CI/CD capabilities for seamless updates and maintenance.",
+          "description": "Designed and deployed a consulting company website to showcase services and establish an online presence.",
           "image": "/projects/ignite-solutions/is_logo.png",
           "link": "https://ignitesolutions.eu/",
           "technologies": [

@@ -6,18 +6,18 @@ export default function Impressum() {
         According to § 5 TMG (German Telemedia Act):
       </p>
       <p className="mb-4">
-        [Your Full Name]<br />
-        [Your Street Address]<br />
-        [Your City, Postal Code]<br />
-        [Your Country]
+        Jonathan Buchan<br />
+        Oppenheimer Landstrasse 102<br />
+        Frankfurt am Main, 60596<br />
+        Germany
       </p>
       <h2 className="text-2xl font-bold mt-6 mb-4">Contact</h2>
       <p className="mb-4">
-        Phone: [Your Phone Number]<br />
-        Email: [Your Email Address]
+        Phone: +49 176 754 066 75<br />
+        Email: jonathan.buchan@jdtbuchan.com
       </p>
       <p className="mt-6">
-        Please note: This is a basic Impressum. Depending on your specific situation and the services you offer, you may need to include additional information to comply with German law.
+
       </p>
     </div>
   )

@@ -8,7 +8,7 @@ import Breadcrumb from '@/components/Breadcrumb'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'JDTBuchan Portfolio',
+  title: 'Jonathan Buchan Portfolio',
   description: 'Showcasing my journey, projects, and adventures in software development',
   icons: {
     icon: "/favicon-32x32.png",
@@ -46,7 +46,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
       <Navbar/>
-      <div className="container mx-auto px-4 py-8 flex-grow">
+      <div className="container mx-auto px-4 py-4 flex-grow">
         <Breadcrumb/>
         <main>
           {children}
