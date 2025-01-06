@@ -11,12 +11,11 @@ export function TechnologyGraph() {
     if (!svgRef.current) return
 
     const updateGraph = () => {
-      const svg = d3.select(svgRef.current)
-      const width = window.innerWidth
-      const height = window.innerHeight
+      const container = svgRef.current!.parentElement!
+      const width = container.clientWidth
+      const height = container.clientHeight
 
-      // Update SVG dimensions
-      svg
+      const svg = d3.select(svgRef.current)
         .attr("width", width)
         .attr("height", height)
         .attr("viewBox", [0, 0, width, height])
@@ -24,21 +23,34 @@ export function TechnologyGraph() {
       // Clear previous graph
       svg.selectAll("*").remove()
 
+      // // Create zoom behavior
+      // const zoom = d3.zoom()
+      //   .scaleExtent([0.5, 2])
+      //   .on("zoom", (event) => {
+      //     g.attr("transform", event.transform)
+      //   })
+
+      // // Apply zoom to SVG
+      // svg.call(zoom as any)
+
+      // Create a group for the graph elements
+      const g = svg.append("g")
+
       // Adjusted simulation forces for tighter clustering
       const simulation = d3.forceSimulation()
-        .force("link", d3.forceLink().id((d: any) => d.id).distance(150)) // Reduced distance
+        .force("link", d3.forceLink().id((d: any) => d.id).distance(100))
         .force("charge", d3.forceManyBody()
-          .strength(-500) // Reduced repulsion
-          .distanceMax(500)) // Limit the force's reach
+          .strength(-300)
+          .distanceMax(500))
         .force("center", d3.forceCenter(width / 2, height / 2))
-        .force("collision", d3.forceCollide().radius((d: any) => d.value * 1.5)) // Reduced collision radius
-        .force("x", d3.forceX(width / 2).strength(0.1)) // Added x-positioning force
-        .force("y", d3.forceY(height / 2).strength(0.1)) // Added y-positioning force
+        .force("collision", d3.forceCollide().radius((d: any) => d.value * 2))
+        .force("x", d3.forceX(width / 2).strength(0.1))
+        .force("y", d3.forceY(height / 2).strength(0.1))
 
       const { nodes, links } = getTechnologyGraph()
 
       // Create the links with gradient effect
-      const link = svg
+      const link = g
         .append("g")
         .attr("class", "links")
         .selectAll("line")
@@ -48,7 +60,7 @@ export function TechnologyGraph() {
         .attr("stroke-width", (d: any) => Math.sqrt(d.value))
 
       // Create the nodes with subtle glow effect
-      const node = svg
+      const node = g
         .append("g")
         .attr("class", "nodes")
         .selectAll("circle")
@@ -58,9 +70,11 @@ export function TechnologyGraph() {
         .attr("fill", (d: any) => d.type === 'category' ? 'rgba(255, 107, 107, 0.7)' : 'rgba(77, 171, 247, 0.7)')
         .attr("filter", "url(#glow)")
         .call(drag(simulation) as any)
+        .on("mouseover", handleMouseOver)
+        .on("mouseout", handleMouseOut)
 
       // Add labels with better visibility
-      const label = svg
+      const label = g
         .append("g")
         .attr("class", "labels")
         .selectAll("text")
@@ -91,6 +105,35 @@ export function TechnologyGraph() {
         .attr("in", "coloredBlur")
       feMerge.append("feMergeNode")
         .attr("in", "SourceGraphic")
+
+      // Handle mouse interactions
+      function handleMouseOver(event: any, d: any) {
+        // Highlight connected nodes and links
+        const connectedNodes = new Set()
+        links.forEach((link: any) => {
+          if (link.source.id === d.id) connectedNodes.add(link.target.id)
+          if (link.target.id === d.id) connectedNodes.add(link.source.id)
+        })
+
+        node.attr("opacity", (n: any) => 
+          n.id === d.id || connectedNodes.has(n.id) ? 1 : 0.2
+        )
+
+        link.attr("opacity", (l: any) =>
+          l.source.id === d.id || l.target.id === d.id ? 1 : 0.1
+        )
+
+        label.attr("opacity", (n: any) =>
+          n.id === d.id || connectedNodes.has(n.id) ? 1 : 0.2
+        )
+      }
+
+      function handleMouseOut() {
+        // Reset all opacities
+        node.attr("opacity", 1)
+        link.attr("opacity", 1)
+        label.attr("opacity", 1)
+      }
 
       // Set up the simulation handlers
       simulation.nodes(nodes as any).on("tick", ticked)
@@ -162,10 +205,8 @@ export function TechnologyGraph() {
   return (
     <svg
       ref={svgRef}
-      className="fixed inset-0 w-full h-full opacity-30 pointer-events-none"
+      className="absolute inset-0 w-full h-full"
       style={{
-        zIndex: -1,
-        minHeight: '100vh',
         background: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(240, 240, 255, 0.8))'
       }}
     />

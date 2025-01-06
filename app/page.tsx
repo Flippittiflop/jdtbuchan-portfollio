@@ -5,17 +5,21 @@ import { Button } from "@/components/ui/button"
 import { FileDown } from 'lucide-react'
 import {useEffect, useRef, useState} from "react"
 import { TechnologyGraph } from '@/components/TechnologyGraph'
-import {timeout} from "d3";
+import {timeout} from "d3"
+import { cn } from '@/lib/utils'
+import confetti from 'canvas-confetti'
 
 export default function Home() {
   const videoRef = useRef<HTMLVideoElement | null>(null)
   const jonTypes = ["Unknown Jon", "Intelligent Jon", "Casual Jon", "Professional Jon", "Teacher Jon", "Fun Jon"];
   const [jonType, setJonType] = useState(jonTypes[0]);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const playRandomFrames = () => {
     const video = videoRef.current;
     if (video) {
       video.pause();
+      setIsAnimating(true);
       let count = 0;
       const interval = setInterval(() => {
         if (count < 3) {
@@ -42,6 +46,13 @@ export default function Home() {
           count++;
         } else {
           clearInterval(interval);
+          setIsAnimating(false);
+          // Trigger confetti
+          confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+          });
         }
       }, 1000);
     }
@@ -53,24 +64,42 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center ">
+      <div className="flex flex-col items-center justify-center">
         <div className="text-center">
-          <div
-              className="relative w-80 h-80 mx-auto mb-8 rounded-full overflow-hidden"
+          <div className="relative w-96 h-96 mx-auto mb-8">
+            {/* Pulsating ring */}
+            <div className={cn(
+              "absolute inset-0 rounded-full",
+              "bg-gradient-to-r from-purple-500 to-indigo-500",
+              isAnimating && "animate-pulse-ring"
+            )} />
+            
+            {/* Video container */}
+            <div
+              className="absolute inset-4 rounded-full overflow-hidden cursor-pointer"
               onClick={playRandomFrames}
-          >
-            <video
+            >
+              <video
                 ref={videoRef}
                 src="/profile/profile-3.mp4"
                 muted
                 loop
                 playsInline
-                style={{width: "100%", height: "100%", objectFit: "cover"}}
-            />
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
           <h1 className="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
-          <h2 className="text-4xl font-bold mb-4">You got {jonType}</h2>
+          <h2 className="text-4xl font-bold mb-4 text-emerald-600">
+            You got{' '}
+            <span className={cn(
+              "transition-all duration-300",
+              isAnimating ? "text-gray-400 font-normal" : "text-indigo-600 font-bold"
+            )}>
+              {jonType}
+            </span>
+          </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Explore my journey, projects, and adventures in the world of development.
           </p>
