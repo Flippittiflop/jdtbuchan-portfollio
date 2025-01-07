@@ -11,7 +11,7 @@ import confetti from 'canvas-confetti'
 
 export default function Home() {
   const videoRef = useRef<HTMLVideoElement | null>(null)
-  const jonTypes = ["Unknown Jon", "Intelligent Jon", "Casual Jon", "Professional Jon", "Teacher Jon", "Fun Jon"];
+  const jonTypes = ["Fun Jon", "Intelligent Jon", "Casual Jon", "Professional Jon", "Teacher Jon", "Fun Jon"];
   const [jonType, setJonType] = useState(jonTypes[0]);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -116,7 +116,7 @@ export default function Home() {
                 View My Projects
               </Button>
             </Link>
-            <a href="/path-to-your-resume.pdf" download className="w-full sm:w-auto">
+            <a href="https://jdtbuchan-media.s3.eu-central-1.amazonaws.com/JBuchan_Resume.pdf" target="_blank" download className="w-full sm:w-auto">
               <Button
                   className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">
                 <FileDown className="mr-2 h-4 w-4"/> Download Resume
