@@ -14,6 +14,7 @@ export default function Home() {
   const jonTypes = ["Fun Jon", "Intelligent Jon", "Casual Jon", "Professional Jon", "Teacher Jon", "Fun Jon"];
   const [jonType, setJonType] = useState(jonTypes[0]);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isAnimated, setIsAnimated] = useState(false);
 
   const playRandomFrames = () => {
     const video = videoRef.current;
@@ -47,6 +48,7 @@ export default function Home() {
         } else {
           clearInterval(interval);
           setIsAnimating(false);
+          setIsAnimated(true);
           // Trigger confetti
           confetti({
             particleCount: 100,
@@ -59,8 +61,12 @@ export default function Home() {
   };
 
   useEffect(() => {
-    playRandomFrames();
+    // playRandomFrames();
+      if (videoRef.current) {
+        videoRef.current.currentTime = 2;
+      }
   }, []);
+
 
   return (
     <>
@@ -91,15 +97,17 @@ export default function Home() {
           </div>
 
           <h1 className="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
-          <h2 className="text-4xl font-bold mb-4 text-emerald-600">
-            You got{' '}
-            <span className={cn(
-              "transition-all duration-300",
-              isAnimating ? "text-gray-400 font-normal" : "text-indigo-600 font-bold"
-            )}>
-              {jonType}
-            </span>
-          </h2>
+          {(isAnimated || isAnimating) && (
+              <h2 className="text-4xl font-bold mb-4 text-emerald-600">
+                You got{' '}
+                <span className={cn(
+                    "transition-all duration-300",
+                    isAnimating ? "text-gray-400 font-normal" : "text-indigo-600 font-bold"
+                )}>
+                  {jonType}
+                </span>
+              </h2>
+          )}
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Explore my journey, projects, and adventures in the world of development.
           </p>
