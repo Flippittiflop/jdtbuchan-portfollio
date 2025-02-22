@@ -8,52 +8,76 @@ import Breadcrumb from '@/components/Breadcrumb'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Jonathan Buchan Portfolio',
-  description: 'Showcasing my journey, projects, and adventures in software development',
-  icons: {
-    icon: "/favicon-32x32.png",
-    apple: [
-      { sizes: "57x57", url: "/apple-icon-57x57.png" },
-      { sizes: "60x60", url: "/apple-icon-60x60.png" },
-      { sizes: "72x72", url: "/apple-icon-72x72.png" },
-      { sizes: "76x76", url: "/apple-icon-76x76.png" },
-      { sizes: "114x114", url: "/apple-icon-114x114.png" },
-      { sizes: "120x120", url: "/apple-icon-120x120.png" },
-      { sizes: "144x144", url: "/apple-icon-144x144.png" },
-      { sizes: "152x152", url: "/apple-icon-152x152.png" },
-      { sizes: "180x180", url: "/apple-icon-180x180.png" },
-    ],
-    other: [
-      { rel: "icon", type: "image/png", sizes: "192x192", url: "/android-icon-192x192.png" },
-      { rel: "icon", type: "image/png", sizes: "96x96", url: "/favicon-96x96.png" },
-      { rel: "icon", type: "image/png", sizes: "16x16", url: "/favicon-16x16.png" },
-      { rel: "manifest", url: "/manifest.json" },
-    ],
-  },
+    metadataBase: new URL('https://jdtbuchan.com'),
+    title: {
+        default: 'Jonathan Buchan - Solutions Architect & Integration Specialist',
+        template: '%s | Jonathan Buchan'
+    },
+    description: 'Expert solutions architect and integration specialist offering enterprise integration, cloud solutions, and web development services. Transform your business with custom technical solutions.',
+    keywords: ['solutions architect', 'integration specialist', 'cloud solutions', 'web development', 'enterprise integration', 'technical consultant', 'freelance developer'],
+    authors: [{ name: 'Jonathan Buchan' }],
+    creator: 'Jonathan Buchan',
+    openGraph: {
+        type: 'website',
+        locale: 'en_US',
+        url: 'https://jdtbuchan.com',
+        title: 'Jonathan Buchan - Solutions Architect & Integration Specialist',
+        description: 'Expert solutions architect and integration specialist offering enterprise integration, cloud solutions, and web development services.',
+        siteName: 'Jonathan Buchan Portfolio',
+        images: [
+            {
+                url: '/og-image.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'Jonathan Buchan - Solutions Architect'
+            }
+        ]
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Jonathan Buchan - Solutions Architect & Integration Specialist',
+        description: 'Expert solutions architect and integration specialist offering enterprise integration, cloud solutions, and web development services.',
+        images: ['/og-image.jpg']
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+        },
+    },
+    verification: {
+        google: 'your-google-verification-code', // Add your Google verification code
+    }
 }
 
 export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
+                                       children,
+                                   }: {
+    children: React.ReactNode
 }) {
-  return (
-      <html lang="en" className="h-full">
-      <head>
-        <meta name="msapplication-TileColor" content="#ffffff"/>
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
-        <meta name="theme-color" content="#ffffff"/>
-      </head>
-      <body className={`${inter.className} flex flex-col min-h-screen`}>
-      <Navbar/>
-      <div className="container mx-auto px-4 py-4 flex-grow">
-        <Breadcrumb/>
-        <main>
-          {children}
-        </main>
-      </div>
-      <Footer/>
-      </body>
-      </html>
-  )
+    return (
+        <html lang="en" className="h-full">
+        <head>
+            <meta name="msapplication-TileColor" content="#ffffff"/>
+            <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
+            <meta name="theme-color" content="#ffffff"/>
+            <link rel="canonical" href="https://jdtbuchan.com"/>
+        </head>
+        <body className={`${inter.className} flex flex-col min-h-screen`}>
+        <Navbar/>
+        <div className="container mx-auto px-4 py-4 flex-grow">
+            <Breadcrumb/>
+            <main>
+                {children}
+            </main>
+        </div>
+        <Footer/>
+        </body>
+        </html>
+    )
 }

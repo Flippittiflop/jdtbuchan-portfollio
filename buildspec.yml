@@ -12,6 +12,10 @@ phases:
     commands:
       - echo "Running type checks..."
       - npx tsc --noEmit
+      - echo "Updating sitemap dates..."
+      - |
+        currentDate=$(date +%Y-%m-%d)
+        sed -i "s/<lastmod>[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}<\/lastmod>/<lastmod>$currentDate<\/lastmod>/g" public/sitemap.xml
 
   build:
     commands:
