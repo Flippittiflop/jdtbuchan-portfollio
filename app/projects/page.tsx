@@ -39,7 +39,7 @@ export default function Projects() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {category.projects.map((project, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
                 <div className="relative h-48">
                   <Image
                     src={project.image}
@@ -48,9 +48,11 @@ export default function Projects() {
                     objectFit="cover"
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                  <p className="text-gray-600 mb-4">{project.description}</p>
+                  <p className="text-gray-600 mb-4 flex-grow">{project.description}</p>
+                  
+                  {/* Technologies badges */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, techIndex) => (
                       <Badge key={techIndex} variant="secondary" className="text-xs">
@@ -58,6 +60,8 @@ export default function Projects() {
                       </Badge>
                     ))}
                   </div>
+                  
+                  {/* Button */}
                   {isExternal(project.link) ? (
                     <a
                       href={project.link}
