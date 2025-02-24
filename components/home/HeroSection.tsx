@@ -92,14 +92,14 @@ export function HeroSection({ jonTypes }: HeroSectionProps) {
   }, []);
 
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center relative overflow-hidden bg-gradient-to-b from-white to-gray-50">
+    <div className="min-h-screen w-full flex flex-col items-center justify-center relative overflow-hidden bg-gradient-to-b from-white to-gray-50 px-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center z-10"
+        className="text-center z-10 w-full max-w-2xl mx-auto"
       >
-        <div className="relative w-96 h-96 mx-auto mb-8">
+        <div className="relative w-full max-w-[384px] aspect-square mx-auto mb-8">
           <div className={cn(
             "absolute inset-0 rounded-full",
             "bg-gradient-to-r from-purple-500 to-indigo-500",
@@ -130,9 +130,9 @@ export function HeroSection({ jonTypes }: HeroSectionProps) {
           </div>
         </div>
 
-        <h1 className="text-5xl font-bold mb-4">Solutions Architect & Integration Specialist</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-4">Solutions Architect & Integration Specialist</h1>
         {(isAnimated || isAnimating) && (
-          <h2 className="text-4xl font-bold mb-4 text-emerald-600">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-emerald-600">
             You got{' '}
             <span className={cn(
               "transition-all duration-300",
@@ -142,13 +142,13 @@ export function HeroSection({ jonTypes }: HeroSectionProps) {
             </span>
           </h2>
         )}
-        <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-600">
+        <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto text-gray-600">
           Transforming business challenges into elegant technical solutions. 
           Specializing in enterprise integration, cloud architecture, and custom web applications.
         </p>
         
-        <div className="flex flex-col items-center space-y-4 mb-16">
-          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 w-full">
+        <div className="flex flex-col items-center space-y-4 mb-16 max-w-sm mx-auto">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 w-full">
             <Link href="/contact" className="w-full sm:w-auto">
               <Button
                 className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 text-lg"
@@ -166,7 +166,7 @@ export function HeroSection({ jonTypes }: HeroSectionProps) {
             </Link>
           </div>
           
-          <div className="w-full sm:w-auto max-w-xs">
+          <div className="w-full">
             <a 
               href="https://jdtbuchan-media.s3.eu-central-1.amazonaws.com/JBuchan_Resume.pdf" 
               target="_blank" 
