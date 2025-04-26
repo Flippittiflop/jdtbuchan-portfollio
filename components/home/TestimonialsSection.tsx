@@ -16,7 +16,7 @@ const testimonials = [
   {
     name: "Stephan",
     role: "Director, Ignite Solutions",
-    content: "Jonathan was a highly valued team member, known for his adaptability, technical leadership, and commitment to delivering high-quality solutions"
+    content: "Jonathan is a highly valued developer and architect, known for his adaptability, technical leadership, and commitment to delivering high-quality solutions"
   }
 ];
 
